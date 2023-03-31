@@ -27,4 +27,7 @@
     <!-- Default setting for Settings.Global.MOBILE_DATA_ALWAYS_ON -->
     <bool name="def_mobile_data_always_on">false</bool>
 
+    <!-- 15 seconds for default screen timeout -->
+    <integer name="def_screen_off_timeout">15000</integer>
+
 </resources>
