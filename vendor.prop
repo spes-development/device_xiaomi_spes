@@ -255,6 +255,7 @@ ro.vendor.audio.soundtrigger=sva
 sys.thermal.data.path=/data/vendor/thermal/
 
 # USB
+vendor.usb.device=4e00000.ssusb
 vendor.usb.diag.func.name=diag
 vendor.usb.dpl.inst.name=dpl
 vendor.usb.qdss.inst.name=qdss
