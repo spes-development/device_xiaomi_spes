@@ -1,4 +1,5 @@
 # Bluetooth
+vendor.bluetooth.soc=cherokee
 persist.log.tag.a2dp_codec=S
 persist.log.tag.vendor.qti.bluetooth@1.0-ibs_handler=S
 persist.vendor.bt.a2dp.aac_whitelist=false
@@ -9,6 +10,7 @@ persist.vendor.btstack.aac_frm_ctl.enabled=true
 persist.vendor.btstack.enable.twsplus=false
 persist.vendor.btstack.connect.peer_earbud=true
 persist.vendor.btstack.enable.twsplussho=false
+persist.vendor.btstack.enable.splita2dp=true
 persist.vendor.btstack.enable.swb=true
 persist.vendor.btstack.enable.swbpm=true
 persist.vendor.service.bdroid.soc.alwayson=true
@@ -65,7 +67,6 @@ persist.log.tag.IntervalStats=S
 persist.log.tag.CompatibilityChangeReporter=S
 persist.log.tag.SQLiteLog=S
 persist.log.tag.wificond=S
-persist.log.tag.b/223498680=S
 persist.log.tag.TrafficStats=S
 persist.log.tag.ContrastColorUtil=S
 
