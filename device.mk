@@ -417,6 +417,11 @@ TARGET_SUPPORTS_QUICK_TAP := true
 
 # RIL
 PRODUCT_PACKAGES += \
+    libcurl.vendor \
+    libprocessgroup.vendor \
+    libsqlite.vendor
+
+PRODUCT_PACKAGES += \
     android.hardware.radio@1.6.vendor \
     android.hardware.radio.config@1.3.vendor \
     android.hardware.radio.deprecated@1.0.vendor \
@@ -523,7 +528,9 @@ PRODUCT_COPY_FILES += \
 # WiFi Display
 PRODUCT_PACKAGES += \
     libnl \
-    libwfdaac_vendor
+    libwfdaac_vendor \
+    libjsoncpp.vendor \
+    libpng.vendor
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
