@@ -7,6 +7,7 @@ allow hal_power_default {
   vendor_sysfs_devfreq
   sysfs_msm_subsys
   sysfs_touchpanel
+  vendor_sysfs_devfreq
 }:dir search;
 
 allow hal_power_default self:capability { sys_admin };
@@ -21,6 +22,8 @@ allow hal_power_default {
   sysfs_msm_subsys
   vendor_sysfs_scsi_host
   sysfs_touchpanel
+  vendor_sysfs_kgsl
+  vendor_sysfs_devfreq
 }:{
   file
   lnk_file
