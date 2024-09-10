@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/euclid_spes.mk
+    $(LOCAL_DIR)/blaze_spes.mk
 
 COMMON_LUNCH_CHOICES := \
-    euclid_spes-user \
-    euclid_spes-userdebug \
-    euclid_spes-eng
+    blaze_spes-user \
+    blaze_spes-userdebug \
+    blaze_spes-eng
