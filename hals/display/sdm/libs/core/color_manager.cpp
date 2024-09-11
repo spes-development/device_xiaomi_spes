@@ -717,21 +717,22 @@ DisplayError ColorFeatureCheckingImpl::Init() {
   states_.at(kFrameTriggerSerialize) = new FeatureStateSerializedTrigger(this);
   states_.at(kFrameTriggerPostedStart) = new FeatureStatePostedStart(this);
 
-  if (std::any_of(states_.begin(), states_.end(),
-      [](const FeatureInterface *p) {
-      if (!p) {
-        return true;
-      } else {
-        return false;
-      }})) {
-    std::all_of(states_.begin(), states_.end(),
-      [](const FeatureInterface *p) {
-      if (p) {delete p;} return true;});
-    states_.fill(NULL);
-    curr_state_ = NULL;
-  } else {
-    curr_state_ = states_.at(kFrameTriggerDefault);
-  }
+
+if (std::any_of(states_.begin(), states_.end(),
+    [](const FeatureInterface *p) {
+    if (!p) {
+      return true;
+    } else {
+      return false;
+    }})) {
+  (void)std::all_of(states_.begin(), states_.end(),
+    [](const FeatureInterface *p) {
+    if (p) {delete p;} return true;});
+  states_.fill(NULL);
+  curr_state_ = NULL;
+} else {
+  curr_state_ = states_.at(kFrameTriggerDefault);
+}
 
   if (curr_state_) {
     single_buffer_feature_.clear();
@@ -745,7 +746,7 @@ DisplayError ColorFeatureCheckingImpl::Init() {
 }
 
 DisplayError ColorFeatureCheckingImpl::Deinit() {
-  std::all_of(states_.begin(), states_.end(),
+  (void)std::all_of(states_.begin(), states_.end(),
     [](const FeatureInterface *p)
     {if (p) {delete p;} return true;});
   states_.fill(NULL);
