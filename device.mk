@@ -421,6 +421,7 @@ TARGET_SUPPORTS_QUICK_TAP := true
 PRODUCT_PACKAGES += \
     libcurl.vendor \
     libprocessgroup.vendor \
+    libnetutils.vendor \
     libsqlite.vendor
 
 PRODUCT_PACKAGES += \
