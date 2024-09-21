@@ -20,3 +20,6 @@ cp device/qcom/sepolicy_vndr/legacy-um/qva/vendor/bengal/legacy-ims/hal_rcsservi
 # Vendor & Kernel Sources
 git clone https://github.com/tanvirr007/vendor_xiaomi_spes -b 13.0 vendor/xiaomi/spes
 git clone https://github.com/tanvirr007/kernel_xiaomi_sm6225 kernel/xiaomi/sm6225
+
+# Sepolicy
+git clone -b lineage-20.0 https://github.com/LineageOS/android_device_qcom_sepolicy.git device/qcom/sepolicy_vndr/legacy-um/
