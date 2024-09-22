@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_spes.mk
+    $(LOCAL_DIR)/spark_spes.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_spes-user \
-    aosp_spes-userdebug \
-    aosp_spes-eng
+    spark_spes-user \
+    spark_spes-userdebug \
+    spark_spes-eng
