@@ -161,7 +161,7 @@ TARGET_KERNEL_LLVM_SUPPORT := true
 TARGET_KERNEL_CLANG_VERSION := r383902
 TARGET_KERNEL_CONFIG := vendor/spes-perf_defconfig
 TARGET_KERNEL_HEADERS := kernel/xiaomi/spes
-TARGET_KERNEL_SOURCE := kernel/xiaomi/spes
+TARGET_KERNEL_SOURCE := kernel/xiaomi/sm6225
 
 # Media
 TARGET_DISABLED_UBWC := true
