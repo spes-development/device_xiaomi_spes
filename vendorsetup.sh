@@ -17,9 +17,8 @@ echo -e "${color}Switch back to legacy imsrcsd sepolicy${end}"
 rm -rf device/qcom/sepolicy_vndr/legacy-um/qva/vendor/bengal/ims/imsservice.te
 cp device/qcom/sepolicy_vndr/legacy-um/qva/vendor/bengal/legacy-ims/hal_rcsservice.te device/qcom/sepolicy_vndr/legacy-um/qva/vendor/bengal/ims/hal_rcsservice.te
 
-# Vendor & Kernel Sources
-git clone https://github.com/tanvirr007/vendor_xiaomi_spes -b 13.0 vendor/xiaomi/spes
-git clone https://github.com/tanvirr007/kernel_xiaomi_sm6225 kernel/xiaomi/sm6225
-
-# Sepolicy
-git clone -b lineage-20.0 https://github.com/LineageOS/android_device_qcom_sepolicy.git device/qcom/sepolicy_vndr/legacy-um/
+# Vendor,Kernel,Hardware and Sepolicy Sources
+git clone https://github.com/spes-development/vendor_xiaomi_spes -b 13.0 vendor/xiaomi/spes
+git clone https://github.com/spes-development/kernel_xiaomi_sm6225 --depth=1 -b NaughtySilver kernel/xiaomi/sm6225
+git clone https://github.com/LineageOS/android_hardware_xiaomi.git -b lineage-20 hardware/xiaomi
+git clone https://github.com/LineageOS/android_device_qcom_sepolicy.git -b lineage-20.0 device/qcom/sepolicy_vndr/legacy-um/
