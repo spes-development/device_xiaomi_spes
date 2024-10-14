@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2022 The LineageOS Project
+# Copyright (C) 2024 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -12,10 +12,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/spes/device.mk)
 
 # Inherit some common EuclidOS stuff.
-$(call inherit-product, vendor/euclid/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Product Specifics
-PRODUCT_NAME := euclid_spes
+PRODUCT_NAME := lineage_spes
 PRODUCT_DEVICE := spes
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 11
@@ -26,13 +26,11 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 # Boot Animaton
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# EuclidOS Flags
-EUCLID_BUILD_TYPE := OFFICIAL
-EUCLID_MAINTAINER := тαиνir
-EUCLID_GAPPS := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-TARGET_INCLUDE_PIXEL_LAUNCHER := true
-TARGET_SUPPORTS_TOUCHGESTURES := true
+# EvolutionX
+EVO_BUILD_TYPE = Unofficial
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_INCLUDE_PIXEL_LAUNCHER := false
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
