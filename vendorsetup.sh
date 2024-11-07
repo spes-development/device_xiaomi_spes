@@ -7,6 +7,7 @@ END="\033[0m"
 VENDOR_BRANCH="14.0"
 KERNEL_BRANCH="NaughtySilver"
 HARDWARE_BRANCH="lineage-21"
+DEBUG_BRANCH="lineage-21"
 
 check_dir() {
     if [ -d "$1" ]; then
@@ -45,6 +46,11 @@ fi
 if check_dir hardware/xiaomi; then
     echo -e "${GREEN}Cloning hardware sources from LineageOS (branch: ${YELLOW}$HARDWARE_BRANCH${GREEN})...${END}"
     git clone https://github.com/LineageOS/android_hardware_xiaomi -b $HARDWARE_BRANCH hardware/xiaomi
+fi
+
+if check_dir hardware/samsung-ext/interfaces; then
+    echo -e "${GREEN}Cloning Debugging-Tools from spes-development (branch: ${YELLOW}$DEBUG_BRANCH${GREEN})...${END}"
+    git clone https://github.com/spes-development/hardware_samsung-extra_interfaces -b $DEBUG_BRANCH hardware/samsung-ext/interfaces
 fi
 
 echo -e "${YELLOW}All patches have been successfully applied; your device sources are now ready!${END}"

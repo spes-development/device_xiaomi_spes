@@ -544,3 +544,6 @@ PRODUCT_PACKAGES += \
 # No Cutout Overlay
 PRODUCT_PACKAGES += \
     NoCutoutOverlay
+
+# Include debug tool
+$(call inherit-product, hardware/samsung-ext/interfaces/debug-tools/debug.mk)
