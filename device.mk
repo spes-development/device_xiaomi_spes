@@ -220,7 +220,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3.vendor \
     android.hardware.drm@1.4.vendor \
-    android.hardware.drm-service.clearkey
+    android.hardware.drm-service.clearkey \
+    libcrypto_shim.vendor
 
 # Fastbootd
 PRODUCT_PACKAGES += \
@@ -510,8 +511,6 @@ PRODUCT_COPY_FILES += \
 
 # VNDK
 PRODUCT_EXTRA_VNDK_VERSIONS := 30
-PRODUCT_COPY_FILES += \
-    prebuilts/vndk/v34/arm64/arch-arm64-armv8-a/shared/vndk-core/libcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcrypto-v34.so \
 
 # WiFi
 PRODUCT_PACKAGES += \
