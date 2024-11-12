@@ -240,9 +240,3 @@ on property:ro.boot.hwversion=*
 
 on property:vendor.fps_hal.restartimes=max
     stop vendor.fps_hal
-
-on property:ro.boot.fpsensor=gdx
-    setprop ro.vendor.fingerprint.sensor_location 1080|925|115|local:4630946773257169537
-
-on property:ro.boot.fpsensor=fpc
-    setprop ro.vendor.fingerprint.sensor_location 1080|925|115|local:4630946616659355009
