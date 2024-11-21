@@ -20,6 +20,9 @@ ro.bluetooth.wipower=false
 # Blur
 ro.launcher.blur.appLaunch=0
 
+# Game FPS  Limit
+debug.graphics.game_default_frame_rate.disabled=true
+
 # Camera
 camera.disable_zsl_mode=1
 vendor.camera.aux.packagelist=com.android.camera,app.grapheneos.camera,org.lineageos.aperture,org.lineageos.aperture.dev
