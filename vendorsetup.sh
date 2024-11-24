@@ -8,6 +8,7 @@ VENDOR_BRANCH="15.0"
 KERNEL_BRANCH="NaughtySilver"
 HARDWARE_BRANCH="lineage-22.0"
 DEBUG_BRANCH="lineage-22"
+LEICA_CAMERA_BRANCH="leica-5.0"
 
 check_dir() {
     if [ -d "$1" ]; then
@@ -51,6 +52,11 @@ fi
 if check_dir hardware/samsung-ext/interfaces; then
     echo -e "${GREEN}Cloning Debugging-Tools from spes-development (branch: ${YELLOW}$DEBUG_BRANCH${GREEN})...${END}"
     git clone https://github.com/spes-development/hardware_samsung-extra_interfaces -b $DEBUG_BRANCH hardware/samsung-ext/interfaces
+fi
+
+if check_dir vendor/xiaomi/miuicamera; then
+    echo -e "${GREEN}Cloning Leica Camera vendor sources from ItzDFPlayer (branch: ${YELLOW}$LEICA_CAMERA_BRANCH${GREEN})...${END}"
+    git clone https://gitlab.com/ItzDFPlayer/vendor_xiaomi_miuicamera -b $LEICA_CAMERA_BRANCH vendor/xiaomi/miuicamera
 fi
 
 echo -e "${YELLOW}All patches have been successfully applied; your device sources are now ready!${END}"
