@@ -41,6 +41,9 @@ persist.demo.hdmirotationlock=false
 sys.fp.miui.token=0
 ro.hardware.fp.sideCap=true
 
+# Dalvik
+dalvik.vm.dex2oat64.enabled=true
+
 # Fwk detect
 ro.vendor.qti.va_aosp.support=1
 
