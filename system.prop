@@ -97,6 +97,11 @@ ro.nfc.port=I2C
 # NTP
 persist.backup.ntpServer=0.pool.ntp.org
 
+# QTI Mem Optimization
+persist.vendor.sys.memplus.enable=false
+ro.vendor.qti.sys.fw.bg_apps_limit=30
+ro.vendor.qti.sys.fw.bservice_limit=60
+
 # Radio
 DEVICE_PROVISIONED=1
 persist.sys.fflag.override.settings_provider_model=false
