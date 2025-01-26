@@ -113,6 +113,11 @@ ro.apk_verity.mode=2
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
+# Fingerprint
+persist.vendor.fingerprint.type=side
+persist.vendor.fingerprint.sensor_modules=fpc,goodix
+persist.vendor.fingerprint.sensor_location=1080|930|150|local:4630946773257169537,1080|930|150|local:4630946616659355009
+
 # Fling Velocity
 ro.min.fling_velocity=160
 ro.max.fling_velocity=20000
