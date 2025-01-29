@@ -1,13 +1,13 @@
 #
-# Copyright (C) 2022 The LineageOS Project
+# Copyright (C) 2025 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/euclid_spes.mk
+    $(LOCAL_DIR)/lineage_spes.mk
 
 COMMON_LUNCH_CHOICES := \
-    euclid_spes-user \
-    euclid_spes-userdebug \
-    euclid_spes-eng
+    lineage_spes-user \
+    lineage_spes-userdebug \
+    lineage_spes-eng
