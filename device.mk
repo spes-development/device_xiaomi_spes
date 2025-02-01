@@ -564,3 +564,6 @@ $(call inherit-product, vendor/xiaomi/miuicamera/config.mk)
 # Remove unnecessary system apps (e.g., AudioFX)
 PRODUCT_PACKAGES += \
     RemovePackages
+
+# Sign keys path
+$(call inherit-product, vendor/lineage-priv/keys/keys.mk)
