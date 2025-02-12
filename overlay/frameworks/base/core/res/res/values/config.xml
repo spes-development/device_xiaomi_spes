@@ -22,6 +22,9 @@
          Software implementation will be used if config_hardware_auto_brightness_available is not set -->
     <bool name="config_automatic_brightness_available">true</bool>
 
+    <!-- Whether the device supports Smart Pixels -->
+    <bool name="config_supportSmartPixels">true</bool>
+
     <!-- Array of ambient lux threshold values. This is used for determining hysteresis constraint
          values by calculating the index to use for lookup and then setting the constraint value
          to the corresponding value of the array. The new brightening hysteresis constraint value
