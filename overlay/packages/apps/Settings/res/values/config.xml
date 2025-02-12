@@ -28,6 +28,9 @@
     <string name="config_batDesCap" translatable="false">/sys/class/power_supply/bms/charge_full</string>
     <string name="config_batChargeCycle" translatable="false">/sys/class/power_supply/bms/cycle_count</string>
 
+    <!-- Whether memory from app_info_settings is available or not -->
+    <bool name="config_show_app_info_settings_memory">true</bool>
+
     <!-- Whether to show Smooth Display feature in Settings Options -->
     <bool name="config_show_smooth_display">true</bool>
 </resources>
